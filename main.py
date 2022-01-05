@@ -36,24 +36,7 @@ def toString(a):
   return m
 
 
-def toStringkey(a,key):
-  l=[]
-  m=""
-  for i in a:
-    b=0
-    c=0
-    k=int(math.log10(i))+1                                            
 
-    for j in range(k):
-      b=((i%10)*(2**j))   
-      i=i//10
-      c=c+b
-      c=c/key
-    l.append(c)
-  
-  for x in l:
-    m=m+chr(x)
-  return m
 
 word = input("enter the word to be encrypted or decrepted: ")
 key = int(input("enter the key number : "))
